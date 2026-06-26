@@ -2,14 +2,14 @@
 import PackageDescription
 let macLibgodotTarget: Target = .binaryTarget(
     name: "mac_libgodot",
-    url: "https://github.com/migueldeicaza/godot/releases/download/v4.6.4/libgodot-macos.xcframework.zip",
-    checksum: "2d8c2aaa336fe7c0f621f390c88ce9efb735f6b3c715657c1f665d26134db3a4"
+    url: "https://github.com/iarafathsn/godot/releases/download/v4.7.0/libgodot-macos.xcframework.zip",
+    checksum: "1e043940d4695ff7efe7dcd8e2a72a0dba292f254011721eafb46f2f840eb03f"
 )
 
 let iosLibgodotTarget: Target = .binaryTarget(
     name: "ios_libgodot",
-    url: "https://github.com/migueldeicaza/godot/releases/download/v4.6.4/libgodot-ios.xcframework.zip",
-    checksum: "c7b945aae1e02eabafa6578930e1ab3ac17cd1f8665ad3af4482447646d200c1"
+    url: "https://github.com/iarafathsn/godot/releases/download/v4.7.0/libgodot-ios.xcframework.zip",
+    checksum: "4b61d9a01ca908270d878da718e22053b07907e16b90f10d50d0593aaff9093b"
 )
 
 let package = Package(
@@ -46,7 +46,7 @@ let package = Package(
         .executableTarget(
             name: "TrivialSample",
             dependencies: ["SwiftGodotKit"],
-            
+
             // This line does not seem to do anything in Xcode, so you need to manually
             // copy main.pck and make it available from somwehere else
             resources: [
